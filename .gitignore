@@ -1,7 +1,7 @@
 # build output
 dist/
 
-# generated types
+# astro generated files
 .astro/
 
 # dependencies
@@ -15,10 +15,16 @@ pnpm-debug.log*
 
 # environment variables
 .env
-.env.production
+.env.*
+*.local
 
 # macOS-specific files
 .DS_Store
 
-# jetbrains setting folder
+# JetBrains IDEs
 .idea/
+
+# Firebase configuration files (optional: keep them tracked, so do NOT ignore them)
+# Uncomment below ONLY if you don't want to commit them
+# firebase.json
+# .firebaserc
