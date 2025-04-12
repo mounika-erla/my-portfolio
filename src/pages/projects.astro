@@ -1,8 +1,14 @@
 ---
 // src/pages/projects.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
+// Import the React component - use client:load to make it interactive
+import InteractiveCounter from '../components/InteractiveCounter.jsx';
 ---
 <BaseLayout title="My Projects">
-    <p>This page will showcase interactive project components.</p>
-    <!-- We will add app islands here later -->
+    <p>This page showcases interactive project components.</p>
+
+    <!-- Add the React component island -->
+    <InteractiveCounter client:load start={5} />
+
+    <p>You can add more components built with React, Vue, Svelte, etc.</p>
 </BaseLayout>
